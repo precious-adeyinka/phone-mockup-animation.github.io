@@ -6,6 +6,7 @@
 		body {
 			margin: 0;
 			padding: 0;
+			perspective: 300px;
 		}
 		@media only screen and (max-width: 900px) {
 			.container {
@@ -38,7 +39,7 @@
 			/*box-shadow: 0 570px 5px 10px rgba(0,0,0,0.1);*/
 			border: none;
 			border-radius: 20px;
-			animation: spin 6s 0.5s ease-in-out infinite;
+			animation: spin 5s 0.5ms linear infinite;
 			transform-style: preserve-3d; 
 		}
 		.depth {
@@ -64,10 +65,10 @@
 			}
 			50%{
 				transform-origin: top;
-				transform: rotate3d(0deg);
+				transform: rotateX(0deg);
 			}
 			65% {
-				transform: rotate3d(360deg);
+				transform: rotateX(360deg);
 			}
 			70% {
 				transform: rotateY(0deg);
