@@ -1,4 +1,4 @@
-# phone-mockup-animation.github.io
+# Phone-Mockup-Animation
 A simple implementation of css3 and html5 to create a mockup animation for a mobile phone.
 
 # MOCKUP
