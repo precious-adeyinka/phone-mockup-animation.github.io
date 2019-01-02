@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>IPHONE</title>
+	<title>PHONE MOCKUP ANIMATION</title>
 	<style type="text/css">
 		body {
 			margin: 0;
 			padding: 0;
-			background: #fff;
-			perspective: 150px;
-			overflow: hidden;
+		}
+		@media only screen and (max-width: 2024px) {
+			.container {
+				max-width: 100%;
+			}
+			.dot-container::before {
+				content: "";
+			    height: 9px;
+			    width: 9px;
+			    background: rgba(0,0,0,0.4);cont
+			    border-radius: 50%;
+			    display: flex;
+			    justify-content: center;
+			    flex-direction: row;
+			    position: absolute!important;
+			    left: 40px!important;
+			    margin-right: 1em;
+			    top: 33px;
+			}
+		}
+		@media only screen and (max-width: 800px) and (min-width: 600px) {
+			.container {
+				max-width: 100%;
+			}
+			.dot-container {
+				width: 30px!important;
+			}
+			.dot-container::before {
+				content: "";
+			    height: 9px;
+			    width: 9px;
+			    background: rgba(0,0,0,0.4);
+			    border-radius: 50%;
+			    display: flex;
+			    justify-content: center;
+			    flex-direction: row;
+			    position: absolute!important;
+			    left: 30px!important;
+			    margin-right: 1em;
+			    top: 33px;
+			}
+		}
+		@media only screen and (max-width: 600px) {
+			.container {
+				max-width: 100%;
+			}
+			.dot-container {
+				width: 20px!important;
+			}
+			.dot-container::before {
+				content: "";
+			    height: 9px;
+			    width: 9px;
+			    background: rgba(0,0,0,0.4);
+			    border-radius: 50%;
+			    display: flex;
+			    justify-content: center;
+			    flex-direction: row;
+			    position: absolute!important;
+			    left: 25px!important;
+			    margin-right: 1em;
+			    top: 33px;
+			}
 		}
 		.container {
 			max-width: 20%;
@@ -24,7 +84,15 @@
 			border: none;
 			border-radius: 20px;
 			box-shadow: 0 0 10px 4px rgba(0,0,0,1);
-			background: #fff;
+			background: url(screen1.jpg);
+			margin: 1% auto;
+		}
+		.depth img {
+			max-width: 100%;
+			height: auto;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
 		}
 		@keyframes spin {
 			0%{
@@ -35,10 +103,10 @@
 			}
 			50%{
 				transform-origin: top;
-				transform: rotateX(0deg);
+				transform: rotate3d(0deg);
 			}
 			65% {
-				transform: rotateX(360deg);
+				transform: rotate3d(360deg);
 			}
 			70% {
 				transform: rotateY(0deg);
@@ -157,6 +225,7 @@
 <body>
 	<div class="container">
 		<div class="depth">
+			<!--<img src="screen1.jpg">-->
 			<div class="header">
 				<span class="hole"></span>
 				<div class="dot-container"></div>
