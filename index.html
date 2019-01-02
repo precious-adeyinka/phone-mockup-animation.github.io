@@ -7,69 +7,30 @@
 			margin: 0;
 			padding: 0;
 		}
-		@media only screen and (max-width: 2024px) {
-			.container {
-				max-width: 100%;
-			}
-			.dot-container::before {
-				content: "";
-			    height: 9px;
-			    width: 9px;
-			    background: rgba(0,0,0,0.4);cont
-			    border-radius: 50%;
-			    display: flex;
-			    justify-content: center;
-			    flex-direction: row;
-			    position: absolute!important;
-			    left: 90px!important;
-			    margin-right: 1em;
-			    top: 33px;
-			}
-		}
-		@media only screen and (max-width: 800px) and (min-width: 600px) {
+		@media only screen and (max-width: 900px) {
 			.container {
 				max-width: 100%;
 			}
 			.dot-container {
-				width: 30px!important;
+				width: 25px!important;
+				margin-left: 2%;
 			}
 			.dot-container::before {
-				content: "";
-			    height: 9px;
-			    width: 9px;
-			    background: rgba(0,0,0,0.4);
-			    border-radius: 50%;
-			    display: flex;
-			    justify-content: center;
-			    flex-direction: row;
-			    position: absolute!important;
-			    left: 30px!important;
-			    margin-right: 1em;
-			    top: 33px;
+				left: 2% !important;
 			}
-		}
-		@media only screen and (max-width: 600px) {
+		}	
+		@media only screen and (max-width: 601px) {
 			.container {
 				max-width: 100%;
 			}
 			.dot-container {
-				width: 20px!important;
+				width: 25px!important;
+				margin-left: 25%;
 			}
 			.dot-container::before {
-				content: "";
-			    height: 9px;
-			    width: 9px;
-			    background: rgba(0,0,0,0.4);
-			    border-radius: 50%;
-			    display: flex;
-			    justify-content: center;
-			    flex-direction: row;
-			    position: absolute!important;
-			    left: 25px!important;
-			    margin-right: 1em;
-			    top: 33px;
+				left: 2% !important;
 			}
-		}
+		}		
 		.container {
 			max-width: 20%;
 			margin: 1% auto;
@@ -77,7 +38,7 @@
 			/*box-shadow: 0 570px 5px 10px rgba(0,0,0,0.1);*/
 			border: none;
 			border-radius: 20px;
-			animation: spin 6s 0.5s ease-in-out infinite;
+			/*animation: spin 6s 0.5s ease-in-out infinite;*/
 			transform-style: preserve-3d; 
 		}
 		.depth {
@@ -193,7 +154,7 @@
 		    justify-content: center;
 		    flex-direction: row;
 		    position: absolute;
-		    left: 97px;
+		    left: 30%!important;
 		    top: 33px;
 		}
 		.dot-one {
